@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부트스트랩</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1>1.부트스트랩 - 유틸리티 </h1>
+        <p class="indent">
+            1.1 API
+        </p>
+        <p class="indent">
+            ■ 정의
+        </p>
+        <p class="indent2"> 
+    유틸리티 API는 유틸리티 클래스를 생성하기 위한 Sass 기반 도구입니다.<br>
+    부트스트랩의 유틸리티 API는 쉽게 스타일을 적용할 수 있습니다.<br>
+    다양한 값과 옵션을 통해 유연하게 스타일을 조절할 수 있습니다.<br>
+    반응형 디자인을 위한 클래스들이 포함되어 있어 다양한 화면 크기에 맞게 스타일을 조절할 수 있습니다.<br>
+    투명도를 조절하는 새로운 유틸리티를 만들어 쓸 수 있습니다.
+        </p>
+
+
+        <p class="indent">
+            ■ 예시
+        </p>
+
+        </p>
+        <p class="indent3">● SCSS</p>
+        <div class="card">
+            <div class="card-body">
+                $utilities: (<br>
+                    "opacity": (<br>
+                        property: opacity,<br>
+                        class: opacity,<br>
+                        state: hover,<br>
+                        values: (<br>
+                        0: 0,<br>
+                        25: .25,<br>
+                        50: .5,<br>
+                        75: .75,<br>
+                        100: 1,<br>
+                        )<br>
+                    )<br>
+                    );<br>
+            </div>
+            </div>
+            <p class="indent3">● CSS</p>
+            <div class="card">
+            <div class="card-body">
+                .opacity-0-hover:hover { opacity: 0 !important; }<br>
+                .opacity-25-hover:hover { opacity: .25 !important; }<br>
+                .opacity-50-hover:hover { opacity: .5 !important; }<br>
+                .opacity-75-hover:hover { opacity: .75 !important; }<br>
+                .opacity-100-hover:hover { opacity: 1 !important; }<br>
+            <br>
+            </div>
+            </div>
+
+    </div>
+
+
+<!----------------- 배경색 -------------------->
+
+
+    </div>
+<br>
+    <div class="container">
+    <p class="indent">
+        1.2 배경색 (background)
+    </p>
+
+    <p class="indent">
+        ■ 정의
+    </p>
+    <p class="indent2"> 
+        background-color를 통해 의미를 전달하고 그라디언트로 꾸밈을 추가 합니다.<br>
+        bg-* 클래스를 사용하여 요소에 배경색을 적용할 수 있습니다. <br>
+        원하는 색상을 선택해서 배경색을 바꿔줍니다.<br>
+    
+    </p>
+
+
+    <p class="indent">
+        ■ 예시
+    </p>
+
+
+    <p class="indent3">● HTML, CSS</p>
+    <div class="card">
+        <div class="card-body">
+            <div class="p-3 mb-2 bg-primary text-white">&lt;div class=&quot;p-3 mb-2 bg-primary text-white&quot;&gt;.bg-primary&lt;/div&gt;
+            </div>
+            <div class="gradient-box">.background-image: linear-gradient(to right, #ff0000, #0000ff);     
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<!----------------- 테두리 -------------------->
+
+
+<br>
+    <div class="container">
+    <p class="indent">
+        1.3 테두리 (border)
+    </p>
+
+    <p class="indent">
+        ■ 정의
+    </p>
+    <p class="indent2"> 
+        테두리 유틸리티를 사용하여 요소의 테두리 및 테두리 반경 스타일을 빠르게 지정합니다. 이미지, 버튼 또는 기타 요소에 사용합니다.
+    
+    </p>
+
+
+    <p class="indent">
+        ■ 예시
+    </p>
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="border-top">&lt;div class=&quot;border-top&quot;&gt; # 상단 테두리 제외
+            </div><br>
+            <div class="border border-danger">&lt;div class="border border-danger"&gt;&lt;/div&gt; # 빨간 테두리
+            </div><br>
+            <img src=https://img.freepik.com/free-photo/white-cloud-on-blue-sky_74190-7728.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703894400&semt=sph class="rounded-pill" width="150" height="75" alt="부트스트랩"> # rounded-pill
+        </div>
+    </div>
+
+    
+<!----------------- 색상 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.4 색상 (Color)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    색상 유틸리티 클래스를 사용하여 color(색상)을 통해 의미를 전달합니다
+
+다양한 텍스트 스타일을 정의하는 데 사용되는 예시입니다.
+
+
+
+</p>
+
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+<div class="card">
+        <div class="card-body">
+            <p class="text-warning bg-dark">&lt;p class=&quot;text-warning bg-dark&quot;&gt;.text-warning&lt;/p&gt;
+            </p>
+        </div><br>
+            <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+            <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+</div><br>
+        
+</div>
+
+
+<!----------------- 디스플레이 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.5 디스플레이 (Display)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    디스플레이(Display)는 HTML 요소들의 표시 방법을 조정하고 화면에 어떻게 배치할지 결정할 수 있습니다.<br>
+    쉬운 레이아웃 조작이 가능하며, 반응형 디자인을 쉽게 구현할 수 있고 시각적효과를 손쉽게 구현할 수 있습니다.</p>
+
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+
+
+<div class="card">
+        <div class="card-body">
+            # inline <br><br>
+            <div class="d-inline p-2 text-bg-primary">&lt;div class="d-inline p-2 text-bg-primary"&gt;d-inline&lt;/div&gt;
+            </div>
+            <div class="d-inline p-2 text-bg-dark">&lt;div class="d-inline p-2 text-bg-dark"&gt;d-inline&lt;/div&gt;
+            </div>
+            <br><br>
+            # block <br><br>
+            <span class="d-block p-2 text-bg-primary">&lt;span class="d-block p-2 text-bg-primary"&gt;d-block&lt;/span&gt;
+            </span>
+            <span class="d-block p-2 text-bg-dark">&lt;span class="d-block p-2 text-bg-dark"&gt;d-block&lt;/span&gt;
+            </span> 
+        </div><br>
+</div>            
+
+        <br><br>
+        <p class="indent2"> 
+        * none: 요소를 화면에서 숨깁니다.<br>
+        * inline: 인라인 요소로 표시되며, 컨텐츠 크기만큼만 영역을 차지합니다.<br>
+        * inline-block: 인라인 레벨의 속성을 갖지만 블록 레벨과 같은 박스 모델을 가집니다.<br>
+        * block: 블록 레벨 요소로 표시되며, 가로폭 전체를 차지합니다.<br>
+        * grid: 부모 요소를 그리드 컨테이너로 만들어 자식 요소들을 그리드 아이템으로 배치할 수 있게 합니다.<br>
+        * Inline-grid: 인라인 레벨로 표시하면서 동시에 그리드 레이아웃을 사용할 수 있게 해줍니다.<br>
+        * Table: 테이블(Table) 요소처럼 표시하는 데 사용됩니다.<br>
+        * table-cell: 테이블 레이아웃과 유사한 방식으로 요소들을 가로로 배열합니다 html의 td 요소와 유사한 방식으로 동작합니다..<br>
+        * table-row: 수평적인 테이블 행 형태로 배치합니다. html의 tr 요소와 유사한 방식으로 동작합니다.<br>
+        * flex: 플렉스 컨테이너로 요소를 배치합니다.<br>
+        * Inline-flex: 인라인 레벨로 표시하면서 동시에 해당 요소를 플렉스 박스 컨테이너로 지정합니다.<br>
+        <br>반응형 디자인에서 요소를 특정 화면 크기에서만 표시하거나 숨길 수 있습니다.<br>
+        .d-none 클래스 또는 .d- {sm, md, lg, xl, xxl} -none 클래스 중 하나를 사용하면 됩니다.
+        </p>
+
+
+
+<!----------------- 플렉스 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.6 플렉스 (Flex)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+요소들을 배치하고 정렬하는데 사용되는 css 레이아웃입니다.<br>
+행(row) 과 열(col)에서 요소들을 배치합니다.<br>
+플렉스박스를 사용하면 그리드, 열, 네비게이션바, 레이아웃 정렬 및 크기조정을 신속하게 할 수 있습니다.<br>
+
+
+
+</p>
+
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+<div class="card">
+        <div class="card-body">
+            <div class="d-flex p-2 color-bg">&lt;div class=&quot;d-flex p-2&quot;&gt;I'm a flexbox container!&lt;/div&gt;
+            </div>
+        </div><br>
+</div>
+
+<br>
+<p class="indent">
+    ■ 방향
+</p>
+
+<p class="indent2">
+    방향 유틸리티를 사용하여 플렉스 컨테이너에서 플렉스 항목의 방향을 설정합니다. <br>
+    대부분의 경우 브라우저 기본값이 row 이므로 여기서 수평 클래스를 생략 할 수 있습니다.<br>
+    그러나 값을 명시적으로 설정해야하는 상황이 발생할 수 있습니다 (예: 반응형 레이아웃).
+</p>
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex flex-row mb-3 color-bg1">
+            <div class="p-2 border1">Flex item 1</div>
+            <div class="p-2 border1">Flex item 2</div>
+            <div class="p-2 border1">Flex item 3</div>
+        </div>
+        <div class="d-flex flex-row-reverse color-bg1">
+            <div class="p-2 border1">Flex item 1</div>
+            <div class="p-2 border1">Flex item 2</div>
+            <div class="p-2 border1">Flex item 3</div>
+            </div><br>&lt;div class="d-flex flex-row mb-3"&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 1&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 2&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="d-flex flex-row-reverse"&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 1&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 2&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 3&lt;/div&gt;<br>
+            &lt;/div&gt;<br><br>
+          
+                <div class="d-flex flex-column mb-3">
+                <div class="p-2 border1 color-bg2">Flex item 1</div>
+                <div class="p-2 border1 color-bg2">Flex item 2</div>
+                <div class="p-2 border1 color-bg2">Flex item 3</div>
+                <br>
+                <div class="d-flex flex-column-reverse color-bg2">
+                <div class="p-2 border1 color-bg2">Flex item 1</div>
+                <div class="p-2 border1 color-bg2">Flex item 2</div>
+                <div class="p-2 border1 color-bg2">Flex item 3</div>
+                </div><br>
+            </div>&lt;div class="d-flex flex-column mb-3"&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 1&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 2&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 3&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="d-flex flex-column-reverse"&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 1&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 2&lt;/div&gt;<br>
+            &lt;div class="p-2"&gt;Flex item 3&lt;/div&gt;<br>
+            &lt;/div&gt;<br><br>
+          
+    </div><br>
+</div>
+
+
+<br>
+    <p class="indent2">
+        <strong>justify-content</strong>는 주축방향으로 정렬하는 방식 (시작할 x축, flex-direction : column인 경우 y축)에서 플렉스 항목들의 정렬을 변경합니다.<br> start (브라우저 기본값), end , center , between , around 또는 evenly 중에서 선택합니다.
+
+    </p>
+    <p class="indent2">
+    <strong>align-items</strong>는 교차 축 (시작할 y 축, flex-direction : column인 경우 x축)에서 플렉스 항목의 정렬을 변경합니다.<br> start , end , center , baseline 또는 stretch (브라우저 기본값) 중에서 선택합니다.
+    </p>
+
+    <p class="indent2">
+        <strong>align-self</strong>는 교차 축 (시작할 y 축, flex-direction : column인 경우 x축)에서 정렬을 개별적으로 변경합니다.<br> align-items 와 동일한 옵션 인 start , end , center , baseline 또는 stretch (브라우저 기본값) 중에서 선택합니다.
+        </p>
+
+
+    <p class="indent2">
+        <strong>.flex-fill</strong> 클래스를 사용하면 사용 가능한 모든 가로 공간을 차지하면서 콘텐츠와 동일한 너비 (또는 콘텐츠가 테두리 상자를 초과하지 않는 너비)로 강제 설정합니다.
+        </p>
+
+    <p class="indent2">
+        <strong>.flex-grow- * </strong> 사용 가능한 공간을 꽉 채우기 위해 확장하는 플렉스 항목 입니다.<br>  .flex-grow-1 요소는 가능한 모든 공간을 사용하고 나머지 두 개의 플렉스 항목은 필요한 공간만을 허용합니다.
+        </p>
+
+    <p class="indent2">
+        <strong>.me-auto </strong> Margin End를 자동으로 설정하는 클래스입니다. 해당 아이템이 플렉스 컨테이너의 끝 부분에 자동으로 마진을 설정하여 오른쪽으로 이동하게 됩니다. (예를 들어, 주축이 왼쪽에서 오른쪽으로 향하는 경우, 마진을 설정하여 아이템을 오른쪽으로 이동시킵니다.)
+        </p>
+
+    <p class="indent2">
+        <strong>.ms-auto </strong> Margin Start를 자동으로 설정하는 클래스입니다. 해당 아이템이 플렉스 컨테이너의 시작 부분에 자동으로 마진을 설정하여 왼쪽으로 이동하게 됩니다. (주축이 왼쪽에서 오른쪽으로 향하는 경우, 아이템을 왼쪽으로 이동시킵니다.)
+        </p>
+
+    <p class="indent2">
+        <strong>.flex-wrap</strong>은 Flex 컨테이너 내부의 아이템들이 한 줄에 배치할 공간이 부족할 때, 아이템들을 여러 줄에 걸쳐 자동으로 나열하게 해주는 속성입니다. <br>
+        Flex 아이템들이 Flex 컨테이너의 너비에 맞지 않아도 자동으로 여러 줄로 배치됩니다.<br>
+        <strong>(.flex-nowrap</strong>으로 줄바꿈을 없애거나 <strong>.flex-wrap-reverse</strong>으로 줄바꿈 또는<strong>.flex-wrap-reverse</strong>로 역방향으로 줄바꿈 할 수 있습니다.)
+    
+    <p class="indent2">
+        <strong>order 속성</strong>은 Flexbox에서 사용되며, Flex 컨테이너 내부의 아이템들의 순서를 변경하는 데 사용됩니다. <br>
+        Flexbox를 사용하면 HTML의 순서와는 별개로 아이템들을 재배치할 수 있습니다.
+        </p>
+
+
+
+<!----------------- 플로트 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.7 플로트 (Float)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    플로트는 요소를 좌우 방향으로 띄워서 텍스트나 요소를 감싸거나, 다른 요소와 옆으로 배치하는 데 사용됩니다.
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+
+
+<div class="card">
+        <div class="card-body">
+            <div class="float-start">Float start on all viewport sizes</div><br>
+            <div class="float-end">Float end on all viewport sizes</div><br>
+            <div class="float-none">Don't float on all viewport sizes</div>  
+        </div><br>
+        &lt;div class="float-start"&gt;Float start on all viewport sizes&lt;/div><br>
+        &lt;div class="float-end"&gt;Float end on all viewport sizes&lt;/div><br>
+        &lt;div class="float-none"&gt;Don't float on all viewport sizes&lt;/div&gt;
+
+        </div><br>
+</div>            
+        <p class="indent2"> 
+            .float-start: 요소를 왼쪽으로 플로팅합니다.<br>
+            .float-end: 요소를 오른쪽으로 플로팅합니다.<br>
+            .clearfix: floating 된 요소들의 높이를 정상화하기 위해 사용됩니다. 
+            부모 요소가 자식 요소의 높이를 올바르게 계산하여 레이아웃을 제대로 유지할 수 있습니다.
+        </p>
+
+
+<!----------------- 상호작용 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.8 상호작용 (Interaction)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    사용자가 웹 사이트의 콘텐츠와 상호 작용하는 방식을 변경하는 유틸리티 클래스입니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+
+
+
+<p class="indent2"> 
+    <strong> * 텍스트 선택 </strong>사용자가 콘텐츠와 상호 작용할 때 콘텐츠가 선택되는 방식을 변경합니다.
+</p>
+<div class="card">
+        <div class="card-body">
+        &lt;p class=&quot;user-select-all&quot;&gt;This paragraph will be entirely selected when clicked by the user.&lt;/p&gt;<br>
+        &lt;p class=&quot;user-select-auto&quot;&gt;This paragraph has default select behavior.&lt;/p&gt;<br>
+        &lt;p class=&quot;user-select-none&quot;&gt;This paragraph will not be selectable when clicked by the user.&lt;/p&gt;
+        </div>
+</div>            
+
+            <br>
+            <p class="indent2"> 
+            <strong> * 포인터 이벤트</strong>
+            <br>
+            .pe-none: 해당 요소의 포인터 이벤트를 비활성화합니다. 이 요소 위에서의 마우스 이벤트가 무시됩니다. <br>사용자가 해당 요소를 클릭하거나 호버할 때 효과가 없도록 만들어줍니다.
+            <br>
+            .pe-auto: 이 클래스는 요소에 대한 기본 포인터 이벤트를 복원합니다. 이전에 비활성화되었던 포인터 이벤트를 다시 활성화하여 마우스 이벤트가 해당 요소에 올바르게 작동하도록 합니다.
+            </p>
+
+
+
+
+<!----------------- 링크 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.9 링크 (Link)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    링크 유틸리티는 &lt;a&gt;
+    태그로 표현되는 것을 가리킵니다. 주로 웹페이지에서 하이퍼링크를 만들 때 사용됩니다.
+    <br>요소의 스타일을 조정하여 그 색상, 불투명도, 밑줄 오프셋, 밑줄 색상 등을 설정하는 데 사용됩니다.
+
+
+</p>
+
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+<div class="card">
+        <div class="card-body">
+        <p><a class="link-opacity-10" href="https://getbootstrap.kr/docs/5.3/utilities/link/">Link opacity 10</a> &nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a class="link-opacity-10" href="#"&gt;Link opacity 10&lt;/a&gt;&lt;/p&gt;<br></p>
+        <p><a class="link-opacity-25" href="https://getbootstrap.kr/docs/5.3/utilities/link/">Link opacity 25</a>&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a class="link-opacity-25" href="#"&gt;Link opacity 25&lt;/a&gt;&lt;/p&gt;<br></p>
+        </div>
+</div>        
+        <br>
+<div class="card">
+        <div class="card-body">
+        <p><a class="link-opacity-10-hover" href="https://getbootstrap.kr/docs/5.3/utilities/link/">Link hover opacity 10</a>&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a class="link-opacity-10-hover" href="#"&gt;Link hover opacity 10&lt;/a&gt;&lt;/p&gt;<br>
+        <p><a class="link-opacity-50-hover" href="https://getbootstrap.kr/docs/5.3/utilities/link/">Link hover opacity 50</a>&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a class="link-opacity-50-hover" href="#"&gt;Link hover opacity 50&lt;/a&gt;&lt;/p&gt;<br></p>
+        </div>
+</div>            
+        <br>
+<div class="card">
+        <div class="card-body">
+        <p><a href="https://getbootstrap.kr/docs/5.3/utilities/link" class="link-underline-danger">Danger underline</a> &nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link-underline-danger"&gt;Danger underline&lt;/a&gt;&lt;/p&gt;</p>
+        </div>
+</div>
+
+    
+
+
+
+    <!----------------- 요소채움 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.10 요소채움 (Object fit)
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    개체 맞춤 유틸리티를 사용하여 또는 등의 대체된 요소의 콘텐츠 크기를 해당 컨테이너에 맞게 조정하는 방법을 수정합니다.
+
+
+</p>
+
+
+<p class="indent">
+    ■ 예시
+</p>
+
+
+<div class="card">
+        <div class="card-body">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996A14375A40DBF404" width="200" height="184" class="object-fit-contain border rounded" alt="...">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996A14375A40DBF404" width="200" height="184" class="object-fit-cover border rounded" alt="logo">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996A14375A40DBF404" width="200" height="184" class="object-fit-fill border rounded" alt="logo">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996A14375A40DBF404" width="200" height="184" class="object-fit-scale border rounded" alt="logo">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996A14375A40DBF404" width="200" height="184" class="object-fit-none border rounded" alt="logo">
+        </div>
+    </div>
+</div>
+
+
+<!----------------- 불투명도 -------------------->
+
+
+<br>
+<div class="container">
+<p class="indent">
+    1.11 불투명도 (Opacity)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    HTML 요소에 다양한 불투명도를 적용할 수 있습니다. 투명한 텍스트나 배경을 원하는 수준으로 쉽게 설정할 수 있습니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+
+
+
+
+    <div class="card">
+        <div class="card-body"><br>
+            <div class="opacity-box opacity-100"><p class="text-color">100%</p></div>
+            <div class="opacity-box opacity-75"><p class="text-color">75%</p></div>
+            <div class="opacity-box opacity-50"><p class="text-color">50%</p></div>
+            <div class="opacity-box opacity-25"><p class="text-color">25%</p></div>
+            <div class="opacity-box opacity-0"><p class="text-color">0%</p></div>
+          </div> 
+          &lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;<br>
+          &lt;div class=&quot;opacity-75&quot;&gt;...&lt;/div&gt;<br>
+          &lt;div class=&quot;opacity-50&quot;&gt;...&lt;/div&gt;<br>
+          &lt;div class=&quot;opacity-25&quot;&gt;...&lt;/div&gt;<br>
+          &lt;div class=&quot;opacity-0&quot;&gt;...&lt;/div&gt;<br>
+    </div>
+     
+        
+
+
+            <br>
+            <p class="indent2"> 
+            * opacity 속성은 요소의 불투명도 수준을 설정합니다. 1은 불투명, .5는 반투명, 0 투명을 의미합니다.
+            </p>
+
+    
+
+<!----------------- 오버플로우 -------------------->
+
+<br>
+<p class="indent">
+    1.12 오버플로우 (Overflow)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    요소 내에서 콘텐츠가 오버플로되는 동작을 제어하는 ​​데 사용됩니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="container">
+            <div class="overflow-auto mt-3 pb-2 bg-light" style="max-width: 360px; max-height: 80px; overflow: auto;">
+                <code>.overflow-auto</code> 너비와 높이 치수가 설정된 요소에 적용되는 클래스입니다. 설계상 이 콘텐츠는 넘칠 경우 수직으로 스크롤됩니다.너비와 높이 치수가 설정된 요소에 적용되는 클래스입니다. 설계상 이 콘텐츠는 넘칠 경우 수직으로 스크롤됩니다.
+            </div>
+            <div class="overflow-hidden mt-5 pb-2 bg-light" style="max-width: 360px; max-height: 80px; overflow: hidden;">
+                <code>.overflow-hidden</code> 너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 넘치면 내용이 숨겨집니다.너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 넘치면 내용이 숨겨집니다.
+            </div>
+            <div class="overflow-visible mt-5 pb-2 bg-light" style="max-width: 360px; max-height: 80px; overflow: visible;">
+                <code>.overflow-visible</code> 너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 넘칠 때 내용을 숨기지 않습니다.너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 넘칠 때 내용을 숨기지 않습니다.
+            </div>
+            <div class="overflow-scroll mt-5 pb-2 bg-light" style="max-width: 360px; max-height: 80px; overflow: scroll;">
+                <code>.overflow-scroll</code> 너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 콘텐츠가 오버플로되는지 여부에 관계없이 항상 스크롤 막대가 표시됩니다.너비와 높이 치수가 설정된 요소에 적용되는 유틸리티 클래스입니다. 콘텐츠가 오버플로되는지 여부에 관계없이 항상 스크롤 막대가 표시됩니다.
+            </div>
+            <div class="overflow-scroll mt-5 pb-2 bg-light" style="max-width: 360px; max-height: 80px; overflow: scroll;">
+                <code>.overflow-scroll</code> 항상 스크롤 막대를 표시하는 유틸리티 클래스입니다.항상 스크롤 막대를 표시하는 유틸리티 클래스입니다.항상 스크롤 막대를 표시하는 유틸리티 클래스입니다.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!----------------- 위치 -------------------->
+
+<br>
+<p class="indent">
+    1.13 위치 (position)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    웹 요소를 배치하고 위치를 조정하는 데 사용됩니다. 부트스트랩은 일반적으로 position 속성을 사용하여 다양한 요소의 레이아웃을 만들 수 있도록 도와줍니다. 
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+     <div class="card">
+        <div class="card-body">
+         
+
+        <button type="button" class="btn btn-primary position-relative">
+            Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+          </button><br><br>
+        <p class="indent2">  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary position-relative&quot;&gt;<br>
+            Alerts &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2&quot;&gt;&lt;span class=&quot;visually-hidden&quot;&gt;unread messages&lt;/span&gt;&lt
+          
+        </p>
+        </div>
+    </div>
+    
+
+        <!----------------- 그림자 -------------------->
+
+<br>
+<p class="indent">
+    1.14 그림자 (Shadow)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    box-shadow 유틸리티를 사용하여 요소에 그림자를 추가하거나 제거합니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+     <div class="card">
+        <div class="card-body">
+            <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
+            <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
+        &lt;div class=&quot;shadow-none p-3 mb-5 bg-body-tertiary rounded&quot;&gt;No shadow&lt;/div&gt;<br>
+        &lt;div class=&quot;shadow-sm p-3 mb-5 bg-body-tertiary rounded&quot;&gt;Small shadow&lt;/div&gt;<br>
+        &lt;div class=&quot;shadow p-3 mb-5 bg-body-tertiary rounded&quot;&gt;Regular shadow&lt;/div&gt;<br>
+        &lt;div class=&quot;shadow-lg p-3 mb-5 bg-body-tertiary rounded&quot;&gt;Larger shadow&lt;/div&gt;<br>
+        </div>
+     </div>
+
+
+
+             <!----------------- 크기조절 -------------------->
+
+<br>
+<p class="indent">
+    1.15 크기조절 (Sizing)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    너비 및 높이 유틸리티를 사용하여 요소의 폭 또는 높이를 쉽게 조정 할 수 있습니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+     <div class="card">
+        <div class="card-body">
+       
+        </div>
+     </div>
+
+
+     <!----------------- 간격 -------------------->
+
+<br>
+<p class="indent">
+    1.16 간격 (Spacing)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    여백과 패딩을 쉽게 조절할 수 있습니다. 필요에 따라 적절한 클래스를 선택하여 간편하게 레이아웃을 디자인할 수 있습니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+     <div class="card">
+        <div class="card-body">
+            <div class="m-3 p-4 bg-primary">
+                <p class="m-2 p-3 bg-secondary">
+                  이 요소는 마진과 패딩이 각각 적용되어 있습니다.
+                </p>
+              </div>
+            &lt;div class=&quot;m-3 p-4 bg-primary&quot;&gt;
+            &lt;p class=&quot;m-2 p-3 bg-secondary&quot;&gt;
+        </div>
+    </div><br>
+    <p class="indent2"> <strong>* Margin 클래스</strong>:
+.m-{breakpoint}-{sides}-{size}: 여백을 지정합니다.<br> 여백의 크기는 {size}로 조절하며, {sides}는 t (상단), b (하단), l (왼쪽), r (오른쪽), x (좌우), y (상하), a (모든 방향) 중 선택할 수 있습니다.
+<br>예: .mb-3 (하단 여백), .mx-4 (좌우 여백) <br><br>
+<strong>* Padding 클래스</strong>:
+.p-{breakpoint}-{sides}-{size}: 패딩을 지정합니다.<br> 패딩의 크기는 {size}로 조절하며, {sides}는 t (상단), b (하단), l (왼쪽), r (오른쪽), x (좌우), y (상하), a (모든 방향) 중 선택할 수 있습니다.
+<br>예: .py-2 (상하 패딩), .pl-5 (왼쪽 패딩)
+    </p>
+
+
+
+
+         <!----------------- 텍스트 -------------------->
+
+<br>
+<p class="indent">
+    1.17 텍스트 (Text)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    정렬, 줄바꿈, 굵기 등을 제어하는 ​​일반적인 텍스트 유틸리티입니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+    <div class="card">
+        <div class="card-body">
+            <p style="text-decoration: underline;">This text has a line underneath it.</p>
+            <p style="text-decoration: line-through;">This text has a line going through it.</p>
+            <a href="https://getbootstrap.kr/docs/5.3/utilities/text/" class="text-decoration-none">This link has its text decoration removed</a><br><br>
+            &lt;p class="text-decoration-underline"&gt;This text has a line underneath it.&lt;/p&gt;<br>
+            &lt;p class="text-decoration-line-through"&gt;This text has a line going through it.&lt;/p&gt;<br>
+            &lt;a href="#" class="text-decoration-none"&gt;This link has its text decoration removed&lt;/a&gt;<br>
+            </div>
+    </div><br>
+</div>
+
+                 <!----------------- 수직정렬 -------------------->
+
+<br>
+<p class="indent">
+    1.18 수직정렬 (Vertical alignment)
+</p>
+
+<p class="indent">
+    ■ 용도
+</p>
+<p class="indent2"> 
+    인라인, 인라인 블록, 인라인 테이블 및 테이블 셀 요소의 수직 정렬을 쉽게 변경할 수 있습니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+     <div class="card">
+        <div class="card-body">
+            <span class="align-baseline">baseline</span>
+            <span class="align-top">top</span>
+            <span class="align-middle">middle</span>
+            <span class="align-bottom">bottom</span>
+            <span class="align-text-top">text-top</span>
+            <span class="align-text-bottom">text-bottom</span>
+        </div><br>
+        &lt;span class="align-baseline"&gt;baseline&lt;/span&gt;<br>
+&lt;span class="align-top"&gt;top&lt;/span&gt;<br>
+&lt;span class="align-middle"&gt;middle&lt;/span&gt;<br>
+&lt;span class="align-bottom"&gt;bottom&lt;/span&gt;<br>
+&lt;span class="align-text-top"&gt;text-top&lt;/span&gt;<br>
+&lt;span class="align-text-bottom"&gt;text-bottom&lt;/span&gt;<br>
+
+     </div>
+
+        <!----------------- 가시성 -------------------->
+
+        <br>
+        <p class="indent">
+            1.19 가시성 (Visibility)
+        </p>
+        
+        <p class="indent">
+            ■ 용도
+        </p>
+        <p class="indent2"> 
+            가시성 유틸리티를 사용하여 표시를 수정하지 않고 요소의 가시성을 제어합니다.<br>
+            가시성 유틸리티를 사용하여 요소의 visibility를 설정합니다.<br> 이러한 유틸리티 클래스는 display 값을 전혀 수정하지 않으며 레이아웃에 영향을 미치지 않습니다.<br> invisible 요소는 여전히 페이지의 공간을 차지합니다.
+        </p>
+        <p class="indent">
+            ■ 예시
+        </p>
+            <div class="card">
+                <div class="card-body">
+                    &lt;div class="visible"&gt;...&lt;/div&gt;<br>
+&lt;div class="invisible"&gt;...&lt;/div&gt;
+
+            </div>
+        </div>
+
+
+        <!----------------- Z-index -------------------->
+
+<br>
+<p class="indent">
+    1.20 Z-index
+</p>
+
+<p class="indent">
+    ■ 정의
+</p>
+<p class="indent2"> 
+    요소의 쌓임 순서를 정의합니다. 이것은 주로 포지셔닝된 요소들의 배치 순서를 결정할 때 사용됩니다. 더 높은 Z-index 값을 가진 요소가 더 위로 쌓이게 됩니다.
+</p>
+<p class="indent">
+    ■ 예시
+</p>
+
+            <div class="container mt-5">
+                <div class="position-relative">
+                  <div class="z-3 position-absolute p-3 bg-primary text-white rounded">z-3</div>
+                  <div class="z-2 position-absolute p-3 bg-secondary text-white rounded">z-2</div>
+                  <div class="z-1 position-absolute p-3 bg-success text-white rounded">z-1</div>
+                  <div class="z-0 position-absolute p-3 bg-danger text-white rounded">z-0</div>
+                  <div class="z-n1 position-absolute p-3 bg-warning text-dark rounded">z-n1</div>
+                </div>
+              </div>
+<br><br><br>
+    <p class="indent2"> 일반적으로 z-index 값이 높은 요소가 z-index 값이 낮은 요소 위에 겹쳐지게 됩니다. 따라서 여러 요소가 모두 position: absolute와 함께 z-index 값을 가지고 있다면, z-index 값이 높은(예를 들어 z-3) 요소가 z-index 값이 낮은(예를 들어 z-2, z-1, z-0, z-n1) 요소 위에 위치하게 됩니다.
+            </p>
+
+
+</body>
+</html>
+
+</body>
+</html>

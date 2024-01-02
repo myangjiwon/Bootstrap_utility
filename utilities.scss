@@ -1,0 +1,9 @@
+@mixin custom-utility {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.my-custom-element {
+    @include custom-utility;
+}

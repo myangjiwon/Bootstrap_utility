@@ -1,0 +1,193 @@
+
+.custom-background {
+  background-color: none;
+}
+
+.custom-text {
+  color: #dd2424;
+  font-size: 16px;
+}
+
+.text-opacity-25 { --bs-text-alpha: .25; }
+.text-opacity-50 { --bs-text-alpha: .5; }
+.text-opacity-75 { --bs-text-alpha: .75; }
+.text-opacity-100 { --bs-text-alpha: 1; }
+
+
+[class*="text-opacity-"] {
+  color: rgba(0, 0, 0, var(--bs-text-alpha));
+}
+
+
+
+.indent {
+  text-indent: +1em;
+  font-size: 25px;
+}
+.indent2 {
+  padding-left: 45px;
+} 
+
+.indent3 {
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+
+.opacity-0-hover:hover { opacity: 0 !important; }
+.opacity-25-hover:hover { opacity: .25 !important; }
+.opacity-50-hover:hover { opacity: .5 !important; }
+.opacity-75-hover:hover { opacity: .75 !important; }
+.opacity-100-hover:hover { opacity: 1 !important; }
+
+.card {
+  margin-left: 50px;
+}
+
+.gradient-box {
+  width: 1017.5px;
+  height: 57px;
+  background-image: linear-gradient(to right, #dce5bc, #0000ff); 
+}
+
+.border-top {
+  border: 2px solid black; 
+  border-color: black;
+  background-color: white;
+}
+
+
+.text-opacity-50 {
+  opacity: 0.5; 
+}
+
+.text-opacity-25 {
+  opacity: 0.25; 
+}
+
+
+.text-bg-primary {
+  background-color: blue;
+  color: white; 
+}
+
+.text-bg-dark {
+  background-color: darkgray;
+  color: white;
+}
+
+
+.color-bg {
+  background-color: #f59aec; 
+}
+
+.color-bg1 {
+  background-color: #599f4b;
+}
+
+.d-flex > div {
+  display: inline-block;
+}
+
+.border1 {
+  border: 1px solid black;
+}
+
+.color-bg2 {
+  background-color: #d7bc36; 
+}
+
+
+.float-start, .float-end, .float-none {
+  width: 250px; 
+}
+
+.float-start {
+  float: left; 
+}
+
+.float-end {
+  float: right; 
+}
+
+.float-none {
+  float: none; 
+}
+
+
+.link-opacity-10 {
+  opacity: 0.1; 
+}
+
+.link-opacity-25 {
+  opacity: 0.25; 
+}
+
+.link-opacity-10-hover:hover {
+  opacity: 0.1;
+}
+
+.link-opacity-50-hover:hover {
+  opacity: 0.5;
+}
+
+
+.link-underline-danger {
+  text-decoration: underline red; 
+}
+
+.opacity-box {
+  width: 100px;
+  height: 100px;
+  background-color: #4a4a4d;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-color {
+  color: rgb(250, 250, 250); 
+}
+
+.opacity-100 {
+  opacity: 1; 
+}
+
+.opacity-75 {
+  opacity: 0.75; 
+}
+
+.opacity-50 {
+  opacity: 0.5; 
+}
+
+.opacity-25 {
+  opacity: 0.25; 
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-n1 {
+  z-index: -1;
+}
