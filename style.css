@@ -189,7 +189,3 @@
   z-index: -1;
 }
 
-
-.selectable-text {
-  user-select: all;
-}
