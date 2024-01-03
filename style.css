@@ -47,15 +47,12 @@
 .gradient-box {
   width: 1017.5px;
   height: 57px;
-  background-image: linear-gradient(to right, #dce5bc, #0000ff); 
+  background-image: linear-gradient(to right, #ff0000, #0000ff); 
 }
 
 .border-top {
-  border: 2px solid black; 
-  border-color: black;
-  background-color: white;
+  border-top: 2px solid black;
 }
-
 
 .text-opacity-50 {
   opacity: 0.5; 
@@ -190,4 +187,9 @@
 
 .z-n1 {
   z-index: -1;
+}
+
+
+.selectable-text {
+  user-select: all;
 }
