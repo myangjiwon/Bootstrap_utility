@@ -221,15 +221,7 @@
         </div><br>
 </div>            
 
-        <br><br>
-        <p class="indent2"> 
-       <strong>반응형 디자인</strong>에서 요소를 특정 화면 크기에서만 표시하거나 숨길 수 있습니다.<br>
-        .d-none클래스 또는 .d- {sm, md, lg, xl, xxl} -none 클래스 중 하나를 사용하면 됩니다.<br>
-        .d-none: 모든 화면 크기에서 해당요소를 숨깁니다.<br>
-        .d-block: 모든 화면 크기에서 해당 요소를 표시합니다.
-        화면 크기	클래스
-
-</p>
+ 
 
 
 
@@ -312,7 +304,7 @@
             &lt;div class="p-2"&gt;Flex item 2&lt;/div&gt;<br>
             &lt;div class="p-2"&gt;Flex item 3&lt;/div&gt;<br>
             &lt;/div&gt;<br><br>
-          
+          <a href=""></a>
     </div><br>
 </div>
 <p class="indent2"></p>
@@ -392,7 +384,7 @@
         &lt;div class="float-none"&gt;Don't float on all viewport sizes&lt;/div&gt;
 
         </div><br>
-</div>            
+        
         <p class="indent2"> 
             .float-start: 요소를 왼쪽으로 플로팅합니다.<br>
             .float-end: 요소를 오른쪽으로 플로팅합니다.<br>
@@ -692,13 +684,20 @@
 </p>
      <div class="card">
         <div class="card-body">
-         
-
-        <button type="button" class="btn btn-primary position-relative">
+            &lt;div class=&quot;position-static&quot;&gt;...&lt;/div&gt;<br>
+            &lt;div class=&quot;position-relative&quot;&gt;...&lt;/div&gt;<br>
+            &lt;div class=&quot;position-absolute&quot;&gt;...&lt;/div&gt;<br>
+            &lt;div class=&quot;position-fixed&quot;&gt;...&lt;/div&gt;<br>
+            &lt;div class=&quot;position-sticky&quot;&gt;...&lt;/div&gt;<br>
+        </div></div>
+        <br><br>
+        <div class="card">
+            <div class="card-body">
+                <button type="button" class="btn btn-primary position-relative">
             Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden"></span></span>
           </button><br><br>
         <p class="indent2">  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary position-relative&quot;&gt;<br>
-            Alerts &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2&quot;&gt;&lt;span class=&quot;visually-hidden&quot;&gt;unread messages&lt;/span&gt;
+            Alerts &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2&quot;&gt;&lt;span class=&quot;visually-hidden&quot;&gt;unread messages&lt;/span&gt;<br>
         </p>
         </div>
 
@@ -830,7 +829,46 @@
             &lt;a href="#" class="text-decoration-none"&gt;This link has its text decoration removed&lt;/a&gt;<br>
             </div>
     </div><br>
+    <p class="indent2"> 
+        * 텍스트 꾸미기
+    </p>
+
+<br>
+<div class="card">
+    <div class="card-body">
+
+        &lt;p class="fw-bold"&gt;Bold text.&lt;/p&gt;<br>
+        &lt;p class="fw-bolder"&gt;Bolder weight text (relative to the parent element).&lt;/p&gt;<br>
+        &lt;p class="fw-semibold"&gt;Semibold weight text.&lt;/p&gt;<br>
+        &lt;p class="fw-medium"&gt;Medium weight text.&lt;/p&gt;<br>
+        &lt;p class="fw-normal"&gt;Normal weight text.&lt;/p&gt;<br>
+        &lt;p class="fw-light"&gt;Light weight text.&lt;/p&gt;<br>
+        &lt;p class="fw-lighter"&gt;Lighter weight text (relative to the parent element).&lt;/p&gt;<br>
+        &lt;p class="fst-italic"&gt;Italic text.&lt;/p&gt;<br>
+        &lt;p class="fst-normal"&gt;Text with normal font style&lt;/p&gt;<br>
+        
+
 </div>
+</div><br>
+<p class="indent2"> 
+* 글꼴 굵기와 기울임체
+</p>
+
+<br>
+
+        <div class="card">
+            <div class="card-body">
+
+                &lt;p class="lh-1"&gt;<br>
+                &lt;p class="lh-sm"&gt;
+            
+         
+    </div></div>        
+
+
+<br>
+<p class="indent2"> 
+.lh-* 로 행간을 변경</p>
 
                  <!----------------- 수직정렬 -------------------->
 
@@ -878,8 +916,7 @@
         </p>
         <p class="indent2"> 
             어떤 상황에서 특정 조건에 따라 요소를 보이거나 숨기고자 할 때 visibility 클래스를 사용할 수 있습니다.<br>
-            가시성 유틸리티를 사용하여 요소의 visibility를 설정합니다.<br> 이러한 유틸리티 클래스는 display 값을 전혀 수정하지 않으며 레이아웃에 영향을 미치지 않습니다.<br> invisible 요소는 여전히 페이지의 공간을 차지합니다.
-        </p>
+            
         <p class="indent">
             ■ 예시
         </p>
@@ -893,9 +930,9 @@
         <p class="indent">
             ■ 실제 사용되는 예
         </p><p class="indent2">
-        * 조건부 요소 표시: 특정 이벤트 발생 시 메시지를 보여주는 경우. <br>
-* 모바일에서 요소 숨기기: 반응형 디자인을 위해 화면 크기에 따라 요소를 숨기거나 보여줄 때 사용할 수 있습니다.<br>
-* 토글 기능: 버튼을 클릭하거나 다른 동작을 수행함에 따라 요소를 표시하거나 숨기는 토글 기능을 구현할 수 있습니다. 
+        * 특정 이벤트 발생 시 메시지를 보여주는 경우. <br>
+* 반응형 디자인을 위해 화면 크기에 따라 요소를 숨기거나 보여줄 때 사용할 수 있습니다.<br>
+* 버튼을 클릭하거나 다른 동작을 수행함에 따라 요소를 표시하거나 숨기는 토글 기능을 구현할 수 있습니다. 
 </p>
 
         <!----------------- Z-index -------------------->
@@ -911,14 +948,7 @@
 <p class="indent2"> 
     요소가 겹쳐질 때 어떤 요소가 다른 요소 위에 표시되는지를 결정하는 데 사용됩니다. 
 </p>
-<p class="indent">
-    ■ 실제 사용되는 예
-</p>
-<p class="indent2"> 
-모달 창이나 드롭다운 메뉴가 다른 콘텐츠 위에 나타나야 할 때 z-index를 활용할 수 있습니다.<br>
-모바일이나 태블릿 디바이스와 같이 작은 화면 크기에서 z-index를 사용하여 쌓임 순서를 관리할 수 있습니다.<br>
-웹 페이지에서 여러 레이어가 필요한 경우 복잡한 UI를 구성할 때 유용합니다.
-</p>
+
 
 <p class="indent">
     ■ 예시
